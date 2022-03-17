@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Noto Sans TC'!important;
+	scroll-behavior: smooth;
+	background-color: #F7F1F0;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+p {
+	font-size: 1.8rem;
+	margin-top: 5px;
+	line-height: 3rem;
+	font-weight: 300;
+	letter-spacing: 0.3rem;
+	font-weight: 300;
+}
+span{
+	font-weight: bold;
+}
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	font-weight: bold;
+}
+.section-title span {
+	color: #FF2D2D;
+}
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: #FF2D2D;
+}
+/* Header section */
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 8vh;
+	background-color: #3C3C3C;
+	transition: 0.3s ease background-color;
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: #3C3C3C;
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+	padding-top: -5px;
+}
+#header .nav-list ul a {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+#header .nav-list ul a::after {
+	content: attr(data-after);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: rgba(240, 248, 255, 0.021);
+	font-size: 13rem;
+	letter-spacing: 50px;
+	z-index: -1;
+	transition: 0.3s ease letter-spacing;
+}
+#header .nav-list ul li:hover a::after {
+	transform: translate(-50%, -50%) scale(1);
+	letter-spacing: initial;
+}
+#header .nav-list ul li:hover a {
+	color: crimson;
+}
+/* End Header section */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+}
+.home .content{
+    padding: 220px;
+}
+.home .image img{
+    width:100%;
+    padding:5px;
+}
+.home .content h3{
+    font-size: 50px;
+    color:#333;
+}
+.home .content p{
+    font-family: 'Rufina';
+    font-size: 20px;
+    color:#666;
+    padding:20px 0;
+	font-weight: bolder;
+}
+.home .content span{
+    color: rgb(4, 156, 4);
+  }
+
+/* Internal Section */
+#Internal .Internal1 {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1620px;
+	margin: 0 auto;
+}
+#Internal .Internal1-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#Internal .Internal1-bottom {
+	margin-top: 30px;
+}
+#Internal .Internal1-bottom .icon{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+#Internal .Internal1-item {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 10px 5%;
+	background-color: #C3A6A0;
+	position: relative;
+}
+#Internal .Internal1-item span{
+    color: 	#5151A2;
+  }
+#Internal .Internal1-item h2 {
+	font-size: 2.5rem;
+	color: #443832;
+	margin-bottom: 3px;
+	font-weight: 500;
+}
+#Internal .Internal1-item p {
+	color: #443832;
+	text-align: left;
+	font-weight: 500;
+}
+/* End Internal Section */
+
+/* describes section */
+#describes .describes {
+	flex-direction: column;
+	max-width: 1450px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#describes .describes-header h1 {
+	margin-bottom: 50px;
+}
+#describes .all-describes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#describes .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	overflow: hidden;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+#describes .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #4D0000;
+	color: white;
+}
+#describes .project-info h1 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+#describes .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: -20px;
+}
+#describes .project-info p {
+	color: white;
+}
+#describes .project-img {
+	flex-basis: 60%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#describes .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+#describes .project-img img {
+	transition: 0.3s ease transform;
+}
+#describes .project-item:hover .project-img img {
+	transform: scale(1.2);
+}
+
+/* About Section */
+#About .About {
+	flex-direction: column;
+	max-width: 1500px;
+	margin: 0 auto;
+	width: 100%;
+}
+#About .About-items {
+	max-width: 1200px;
+	width: 100%;
+}
+#About .About-item {
+	width: 80%;
+	padding: 30px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#About .About-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#About .img {
+	width: 200px;
+	height: 280px;
+	margin: 25px auto;
+	margin-bottom: 30px;
+	object-fit: cover;
+}
+#About .About-info h1 {
+	font-size: 2.2rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-weight: bold;
+	margin-left: 22px; 
+}
+#About .About-info h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-left: 10px;
+	margin-bottom: -20px;
+	letter-spacing: 2px;
+	line-height: 24px;
+	font-weight: 450;
+}
+/*End About Section */
+
+/*act*/
+#activity .activity1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 180px;
+	flex-wrap: wrap;
+}
+#activity .activity1title{
+    color: #6d9daf;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#activity .act{
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;   
+}
+.act img{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    object-fit: cover;
+}
+.act h1{
+	font-size: 20px;
+}
+.act img :hover{
+	opacity: 0.3;
+}
+/*act end*/
+
+/* Footer */
+#footer {
+	background-color: #3C3C3C;
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 40px;
+	width: 40px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+/* End Footer */
+
+
+@media only screen and (min-width: 768px) {
+h1.section-title {
+	font-size: 6rem;
+}
+/* describes */
+#describes .project-item {
+	flex-direction: row;
+}
+#describes .project-item {
+	height: 450px;
+	margin: 0;
+	width: 100%;
+	border-radius: 10px;
+}
+#describes .all-describes .project-info {
+	height: 100%;
+}
+#describes .all-describes .project-img {
+	height: 100%;
+}
+/* End descrinbes */
+
+
+
+/* About */
+#About .About {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 20vh;
+}
+#About .About-items {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+}
+#About .About-item {
+	width: 30%;
+	margin: 10px;
+	flex-direction: row;
+}
+#About .About-item .img img {
+	object-fit: cover;
+	border-radius: 50%;
+}
+#About .About-item .About-info {
+	width: 100%;
+	text-align: left;
+}
+/* End About  */
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+#header .nav-list ul {
+	position: initial;
+	display: block;
+	height: auto;
+	width: fit-content;
+	background-color: transparent;
+}
+#header .nav-list ul li {
+	display: inline-block;
+}
+#header .nav-list ul li a {
+	font-size: 1.8rem;
+}
+#header .nav-list ul a:after {
+	display: none;
+}
+}
+
